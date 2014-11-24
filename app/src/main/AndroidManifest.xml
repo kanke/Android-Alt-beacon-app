@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mcminer.practice" >
+<uses-permission android:name="android.permission.bluetooth"/>
+<uses-permission android:name="android.permission.bluetooth_admin"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name="mcminerApp" >
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:launchMode="singleInstance"
+            android:name="com.example.mcminer.practice.MainActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.mcminer.practice.MainActivity" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name="com.example.mcminer.practice.NotificationReceiver" >
+        </activity> -->
+
+    </application>
+
+</manifest>
